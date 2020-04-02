@@ -18,7 +18,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Paris Moves - Online Dance studio',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -29,6 +29,19 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
+      },
+      {
+        resolve: 'gatsby-remark-video',
+        options: {
+          width: 600,
+          height: 'auto',
+          preload: 'auto',
+          muted: true,
+          autoplay: true,
+          playsinline: true,
+          controls: false,
+          loop: true
+        }
+      }
   ],
 }

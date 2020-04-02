@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import DogVideo from "../../static/videoplayback2.mp4"
+
+
 
 class RootIndex extends React.Component {
   render() {
@@ -17,6 +20,18 @@ class RootIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
+
+          <div width="100%" style={{ width: '100%'}, { border: '1px solid #545454'}}>
+          <video autoplay="true"
+          width="100%"
+          height="auto"
+          preload="auto"
+          muted="true"
+          playsinline="true"
+          loop="true">
+    <source src={DogVideo} type="video/mp4" />
+  </video></div>
+
           <div className="wrapper">
             <h2 className="section-headline">Meet your dance teachers</h2>
             <ul className="article-list">

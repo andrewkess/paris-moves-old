@@ -1,0 +1,251 @@
+[
+  {
+    "ts": "2020-04-02T18:48:57.221Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "1ixmizk6t50n"
+            }
+          },
+          "id": "15jwOBqpxqSAOy2eOO4S0m",
+          "type": "Entry",
+          "createdAt": "2020-04-01T21:52:21.063Z",
+          "updatedAt": "2020-04-02T18:47:53.606Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 1,
+          "publishedAt": "2020-04-01T21:52:24.521Z",
+          "firstPublishedAt": "2020-04-01T21:52:24.521Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 3,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "person"
+            }
+          }
+        },
+        "fields": {
+          "name": {
+            "en-US": "John Doe"
+          },
+          "title": {
+            "en-US": "Web Developer"
+          },
+          "company": {
+            "en-US": "ACME"
+          },
+          "shortBio": {
+            "en-US": "Research and recommendations for modern stack websites."
+          },
+          "email": {
+            "en-US": "john@doe.com"
+          },
+          "phone": {
+            "en-US": "0176 / 1234567"
+          },
+          "facebook": {
+            "en-US": "johndoe"
+          },
+          "twitter": {
+            "en-US": "johndoe"
+          },
+          "github": {
+            "en-US": "johndoe"
+          },
+          "image": {
+            "en-US": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7orLdboQQowIUs22KAW4U"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "entries/15jwOBqpxqSAOy2eOO4S0m/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/7.7.0; feature library-import; sdk contentful-management.js/5.12.2; platform node.js/v10.16.3; os macOS/16.7.0;",
+            "Authorization": "Bearer ...mphGA",
+            "user-agent": "node.js/v10.16.3",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 3
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "c9cc00c2d6117c2be276c75a5d670e88"
+      }
+    }
+  },
+  {
+    "ts": "2020-04-02T18:48:59.152Z",
+    "level": "error",
+    "error": {
+      "name": "VersionMismatch",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "1ixmizk6t50n"
+            }
+          },
+          "id": "15jwOBqpxqSAOy2eOO4S0m",
+          "type": "Entry",
+          "createdAt": "2020-04-01T21:52:21.063Z",
+          "updatedAt": "2020-04-02T18:47:53.606Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 1,
+          "publishedAt": "2020-04-01T21:52:24.521Z",
+          "firstPublishedAt": "2020-04-01T21:52:24.521Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 3,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4QQ8IZ0rjMYEuSKz3cXBXu"
+            }
+          },
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "person"
+            }
+          }
+        },
+        "fields": {
+          "name": {
+            "en-US": "John Doe"
+          },
+          "title": {
+            "en-US": "Web Developer"
+          },
+          "company": {
+            "en-US": "ACME"
+          },
+          "shortBio": {
+            "en-US": "Research and recommendations for modern stack websites."
+          },
+          "email": {
+            "en-US": "john@doe.com"
+          },
+          "phone": {
+            "en-US": "0176 / 1234567"
+          },
+          "facebook": {
+            "en-US": "johndoe"
+          },
+          "twitter": {
+            "en-US": "johndoe"
+          },
+          "github": {
+            "en-US": "johndoe"
+          },
+          "image": {
+            "en-US": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7orLdboQQowIUs22KAW4U"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 409,
+        "statusText": "Conflict",
+        "message": "",
+        "details": {
+        },
+        "request": {
+          "url": "entries/15jwOBqpxqSAOy2eOO4S0m/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/7.7.0; feature library-import; sdk contentful-management.js/5.12.2; platform node.js/v10.16.3; os macOS/16.7.0;",
+            "Authorization": "Bearer ...mphGA",
+            "user-agent": "node.js/v10.16.3",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 3
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "cc45e229c49896b0cfa72a426be1fd8c"
+      }
+    }
+  },
+  {
+    "ts": "2020-04-02T18:48:59.152Z",
+    "level": "error",
+    "error": "Could not publish the following entities: Web Developer (15jwOBqpxqSAOy2eOO4S0m)"
+  }
+]
