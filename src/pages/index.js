@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
-import DogVideo from "../../static/videoplayback2.mp4"
+import VogueVideo from "../../static/videoplayback2.mp4"
 
 
 
@@ -29,7 +29,7 @@ class RootIndex extends React.Component {
           muted="true"
           playsinline="true"
           loop="true">
-    <source src={DogVideo} type="video/mp4" />
+    <source src={VogueVideo} type="video/mp4" />
   </video></div>
 
           <div className="wrapper">
