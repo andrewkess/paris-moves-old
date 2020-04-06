@@ -13,6 +13,10 @@ body {
   color: #373F49;
   background: #eee;
   margin: 0;
+
+
+
+  
 }
 
 img {
@@ -69,4 +73,39 @@ a {
 
 .list-inline li {
   display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+.main1 {
+  grid-column: 1 / span 3;
+}
+
+.aside1 {
+  grid-column: span 2;
+}
+
+@media (max-width: 700px) {
+  
+  .main1,
+  .aside1 {
+    grid-column: 1 / span 5;
+  }
+  
+}
+
+
+.main1,
+.aside1 {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,102 @@
+.preview {
+  padding-bottom: 5px;
+  font-size: 1em;
+  }
+  
+  .previewTitle {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+
+ .previewEventblock{
+  padding-left: 15px;
+
+
+ }
+
+
+ .previewPostpad{
+  padding-top: 20px;
+
+
+ }
+
+
+ .previewPrice{
+    padding-bottom: 0px;
+    font-size:1.1em;
+    color: #6c757d;
+    font-weight: 400;
+    line-height: 1.4em;
+    }
+  
+  
+  .previewDescription {
+    padding-top: 5px;
+    font-size:1em;
+    font-family: 'Poppins', sans-serif;
+margin-top:0;
+margin-bottom:0;
+line-height: 1.3em;
+    }
+  
+
+
+
+  .previewDay {
+    color: rgb(255, 255, 255);
+    background-color: #F64C72;
+    font-size: 1.9em;
+    text-align: center;
+
+
+  }
+  .previewMonth {
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+border-left: 1px solid #A0A0A0;
+border-right: 1px solid #A0A0A0;
+border-bottom: 1px solid #A0A0A0;
+padding-left:10px;
+padding-right:10px;
+padding-top: 3px;
+padding-bottom: 3px;
+background-color: rgb(255, 255, 255) !important;
+}
+
+
+  .previewTime {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 3px;
+  }
+
+
+  .previewParis {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 0px;
+    color: #6c757d;
+  }
+
+
+
+
+  .grayDot {
+    color: lightgrey;
+  }
+
+
+
+.tag {
+  color: #A0A0A0;
+  text-decoration: none;
+  display: inline-block;
+  padding: .33333rem .5rem;
+  line-height: 1;
+  border-radius: 2px;
+  border: 1px solid #A0A0A0;
+  margin-right: .5em;
+}

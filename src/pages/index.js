@@ -6,7 +6,10 @@ import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import VogueVideo from "../../static/videoplayback2.mp4"
+import Teacher from '../components/teacher'
 
+import ClassPreview from '../components/class-preview'
+import { Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 
 class RootIndex extends React.Component {
@@ -14,6 +17,9 @@ class RootIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    const danceClasses = get(this, 'props.data.allContentfulClass.edges')
+    const [instructor] = get(this, 'props.data.allContentfulTeacher.edges')
+
 
     return (
       <Layout location={this.props.location}>
@@ -32,6 +38,7 @@ class RootIndex extends React.Component {
   </video>
 
 
+
   <Hero data={author.node} />
           <div className="wrapper">
             <h2 className="section-headline">Meet your dance teachers</h2>
@@ -45,7 +52,42 @@ class RootIndex extends React.Component {
               })}
             </ul>
           </div>
-        </div>
+
+
+          <Teacher data2={instructor.node} />
+
+
+          <div className="wrapper">
+            <h1 className="section-headline">Lara Laquiz</h1>
+            </div>
+
+          <div className="wrapper">
+            <h2 className="section-headline">Book a class</h2>
+           
+           
+            <ListGroup>
+           
+           
+
+
+
+              {danceClasses.map(({ node }) => {
+                return (
+                 
+                    <ClassPreview danceClass={node} />
+              
+                )
+              })}
+               </ListGroup>
+         </div>   
+          </div>
+
+
+
+
+
+
+
       </Layout>
     )
   }
@@ -69,7 +111,7 @@ export const pageQuery = graphql`
           tags
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
           description {
@@ -80,6 +122,8 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {
@@ -97,11 +141,67 @@ export const pageQuery = graphql`
               resizingBehavior: PAD
               background: "rgb:000000"
             ) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
       }
     }
+
+    allContentfulTeacher(
+      filter: { contentful_id: { eq: "4Uv7ed9AQAa6as1lWdw4J3" } }
+    ) {
+      edges {
+        node {
+          name
+          bio {
+            bio
+          }
+          instagram
+         
+         
+          heroImage: visual {
+            fluid(
+              maxWidth: 1180
+              maxHeight: 480
+              resizingBehavior: PAD
+              background: "rgb:000000"
+            ) {
+              ...GatsbyContentfulFluid
+            }
+          }
+        
+        
+        
+        
+        }
+      }
+    }
+
+
+    allContentfulClass(sort: { fields: [date], order: ASC }) {
+      edges {
+        node {
+          name
+          price
+          duration
+          date(formatString: "D")
+          month: date(formatString: "MMMM")
+          
+          time: date(formatString: "h:mm A")
+          
+         
+          description {
+            childMarkdownRemark {
+              rawMarkdownBody
+            }
+          }
+        }
+      }
+    }
+
+
+
+
   }
 `
