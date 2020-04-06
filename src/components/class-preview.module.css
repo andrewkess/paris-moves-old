@@ -17,7 +17,7 @@
 
 
  .previewPostpad{
-  padding-top: 20px;
+  padding-top: 10px;
 
 
  }
@@ -33,12 +33,15 @@
   
   
   .previewDescription {
-    padding-top: 5px;
+    padding-top: 0.8em;
     font-size:1em;
     font-family: 'Poppins', sans-serif;
 margin-top:0;
+font-weight: 400;
 margin-bottom:0;
 line-height: 1.3em;
+text-align: justify;
+padding-right: 5px;
     }
   
 
@@ -47,38 +50,42 @@ line-height: 1.3em;
   .previewDay {
     color: rgb(255, 255, 255);
     background-color: #F64C72;
-    font-size: 1.9em;
+    font-size: 1.5em;
     text-align: center;
-
-
+margin-top:5px;
+padding-top:2px;
+padding-bottom:2px;
   }
   .previewMonth {
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 border-left: 1px solid #A0A0A0;
 border-right: 1px solid #A0A0A0;
 border-bottom: 1px solid #A0A0A0;
-padding-left:10px;
-padding-right:10px;
+padding-left:15px;
+padding-right:15px;
 padding-top: 3px;
 padding-bottom: 3px;
 background-color: rgb(255, 255, 255) !important;
+text-transform: uppercase;
 }
 
 
   .previewTime {
     text-align: center;
-    font-size: 16px;
+    font-size: 0.8em;
     padding-top: 3px;
+    font-weight: 400;
   }
 
 
   .previewParis {
     text-align: center;
-    font-size: 10px;
-    padding-top: 0px;
+    font-size: 0.6em;
+    padding-top: 3px;
     color: #6c757d;
+    line-height: 0px;
   }
 
 
