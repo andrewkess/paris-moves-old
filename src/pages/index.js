@@ -9,7 +9,7 @@ import VogueVideo from "../../static/videoplayback2.mp4"
 import Teacher from '../components/teacher'
 
 import ClassPreview from '../components/class-preview'
-import { Button, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Button, ListGroup, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
 
 
 class RootIndex extends React.Component {
@@ -54,14 +54,20 @@ class RootIndex extends React.Component {
           </div>
 
 
-          <Teacher data2={instructor.node} />
+          
 
 
-          <div className="wrapper">
-            <h1 className="section-headline">Lara Laquiz</h1>
-            </div>
 
-          <div className="wrapper">
+
+          <Container >
+          <Row>
+    <Col sm={6}>
+      
+    <Teacher data2={instructor.node} />
+
+    </Col>
+    <Col sm={6}>
+      
             <h2 className="section-headline">Book a class</h2>
            
            
@@ -79,7 +85,23 @@ class RootIndex extends React.Component {
                 )
               })}
                </ListGroup>
-         </div>   
+       
+
+
+
+
+    </Col>
+  </Row>
+  </Container>
+
+
+
+
+          <div className="wrapper">
+            <h1 className="section-headline">Lara Laquiz</h1>
+            </div>
+
+         
           </div>
 
 
