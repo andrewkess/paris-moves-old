@@ -46,7 +46,7 @@ export default ({ danceClass }) => (
     <ListGroup.Item action onClick={alertClicked}>
     <div class="d-flex w-100 justify-content-between">
       
-      <div class="mb-1" className={styles.preview}>
+      <div className={`mb-1 ${styles.preview}`}>
         
 
 
@@ -54,9 +54,9 @@ export default ({ danceClass }) => (
          
      <div className={styles.previewPrice}>{danceClass.duration} <span className={styles.grayDot}>•</span> €{danceClass.price}</div>
 
- <div class="mb-1 card-text" className={styles.previewDescription}>{danceClass.description.childMarkdownRemark.rawMarkdownBody}</div>
+ <div className={`mb-1 card-text ${styles.previewDescription}`}>{danceClass.description.childMarkdownRemark.rawMarkdownBody}</div>
   
-
+  
 </div>
 
 
