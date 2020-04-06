@@ -12,6 +12,32 @@ function alertClicked() {
 }
 
 
+function danceclassDate(danceClass1){
+  const groupClassHTML = 
+  <div className={styles.previewEventblock}>
+  <div className={styles.previewDay}>{danceClass1.date}</div>
+<div className={styles.previewMonth}>{danceClass1.month}</div>
+<div className={styles.previewTime}>{danceClass1.time} 
+<div className={styles.previewParis}>PARIS TIME</div>
+</div></div>
+
+  const privateClassHTML = 
+  
+  <div className={styles.previewEventblock}>
+ 
+<div className={styles.previewAnyTime}>ANY TIME</div>
+
+</div>
+
+
+  switch (danceClass1.type) {
+    case true:      return groupClassHTML
+    case false:     return privateClassHTML
+    }
+}
+
+
+
 export default ({ danceClass }) => (
   <div className={styles.preview}>
 
@@ -35,16 +61,12 @@ export default ({ danceClass }) => (
 
 
 
-<div className={styles.previewEventblock}>
-<div className={styles.previewDay}>{danceClass.date}</div>
-<div className={styles.previewMonth}>{danceClass.month}</div>
-<div className={styles.previewTime}>{danceClass.time} 
+{danceclassDate(danceClass)}
 
 
-<div className={styles.previewParis}>PARIS TIME</div>
 
-</div>
-</div>
+
+
 
 
     </div>

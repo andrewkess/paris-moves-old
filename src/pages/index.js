@@ -185,9 +185,9 @@ export const pageQuery = graphql`
           name
           price
           duration
+          type
           date(formatString: "D")
           month: date(formatString: "MMM")
-          
           time: date(formatString: "h:mm A")
           
          
