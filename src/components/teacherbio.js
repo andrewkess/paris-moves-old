@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import instagram from "../../public/instagram.png" // Tell Webpack this JS file uses this image
 import { Image, Container, Row, Col } from 'react-bootstrap';
 
-
 export default ({ data2 }) => (
   <div className={styles.teacher}>
 
