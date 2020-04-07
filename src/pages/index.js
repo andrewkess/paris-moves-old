@@ -7,6 +7,10 @@ import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import VogueVideo from "../../static/videoplayback2.mp4"
 import Teacher from '../components/teacher'
+import TeacherBio from '../components/teacherbio'
+import Img from 'gatsby-image';
+
+
 
 import ClassPreview from '../components/class-preview'
 import { Button, ListGroup, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
@@ -59,17 +63,24 @@ class RootIndex extends React.Component {
 
 
 
-          <Container >
+          <Container>
+
+
+  
+
           <Row>
-    <Col sm={6}>
+    <Col xs={12} sm={12} md={12} lg={6}>
       
     <Teacher data2={instructor.node} />
 
     </Col>
-    <Col sm={6}>
+    <Col xs={12} sm={12} md={12} lg={6}>
       
-            <h2 className="section-headline">Book a class</h2>
-           
+    <TeacherBio data2={instructor.node} />
+
+
+            <h4 className="classes-headline">Book a class</h4>
+
            
             <ListGroup>
            
@@ -97,9 +108,6 @@ class RootIndex extends React.Component {
 
 
 
-          <div className="wrapper">
-            <h1 className="section-headline">Lara Laquiz</h1>
-            </div>
 
          
           </div>
@@ -186,7 +194,7 @@ export const pageQuery = graphql`
             fluid(
               maxWidth: 1180
               maxHeight: 480
-              resizingBehavior: PAD
+              resizingBehavior: FILL
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulFluid
@@ -227,3 +235,4 @@ export const pageQuery = graphql`
 
   }
 `
+

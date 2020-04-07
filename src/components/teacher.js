@@ -1,20 +1,33 @@
 import React from 'react'
 import styles from './teacher.module.css'
 import Img from 'gatsby-image'
+import { Carousel, Image } from 'react-bootstrap'
+
+
+
+
+
 
 export default ({ data2 }) => (
-  <div className={styles.teacher}>
 
 
-    <div className={styles.teacherDetails}>
-      <h3 className={styles.teacherHeadline}>{data2.name}</h3>
-      <p>{data2.bio.bio}</p>
 
-      {data2.instagram}
+  <div className={styles.teacher} height="400px">
+  <Image src={data2.heroImage.fluid.src}/>
+<br></br>
+<Carousel>
+  <Carousel.Item>
 
-      <Img alt="" fluid={data2.heroImage.fluid} />
 
 
-    </div>
+
+      <Img className="d-block w-100" alt="" fluid={data2.heroImage.fluid} />
+
+
+  </Carousel.Item>
+</Carousel>
+      
+
+
   </div>
 )

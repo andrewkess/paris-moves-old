@@ -16,9 +16,11 @@ if (!spaceId || !accessToken) {
   )
 }
 
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
-    title: 'Paris Moves - Online Dance studio',
+    title: 'PARIS MOVES • ONLINE DANCE STUDIO',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -26,6 +28,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+        name: 'images'
+      }
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
