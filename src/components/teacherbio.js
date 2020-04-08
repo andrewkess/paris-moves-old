@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './teacher.module.css'
-import instagram from "../../public/instagram.png" // Tell Webpack this JS file uses this image
+//import instagram from "../../public/instagram.png" // Tell Webpack this JS file uses this image
 import { Image, Container, Row, Col } from 'react-bootstrap';
 
 
