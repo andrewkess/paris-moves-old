@@ -5,11 +5,9 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
-import VogueVideo from "../../static/videoplayback2.mp4"
 import Teacher from '../components/teacher'
 import TeacherBio from '../components/teacherbio'
 import Img from 'gatsby-image';
-
 
 
 import ClassPreview from '../components/class-preview'
@@ -31,31 +29,11 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
         
 
-          <video autoplay="true"
-          width="100%"
-          height="auto"
-          preload="auto"
-          muted="true"
-          playsinline="true"
-          loop="true">
-    <source src={VogueVideo} type="video/mp4" />
-  </video>
+     
 
 
 
-  <Hero data={author.node} />
-          <div className="wrapper">
-            <h2 className="section-headline">Meet your dance teachers</h2>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+         
 
 
           
@@ -63,18 +41,18 @@ class RootIndex extends React.Component {
 
 
 
-          <Container>
+          <Container class='mainPagePad'>
 
 
   
 
           <Row>
-    <Col xs={12} sm={12} md={12} lg={6}>
+    <Col xs={12} sm={12} md={12}>
       
     <Teacher data2={instructor.node} />
 
     </Col>
-    <Col xs={12} sm={12} md={12} lg={6}>
+    <Col xs={12} sm={12} md={12}>
       
     <TeacherBio data2={instructor.node} />
 

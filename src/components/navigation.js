@@ -8,6 +8,7 @@ export default () => (
       <li className={styles.navigationItem}>
         <Link to="/">PARIS MOVES</Link>
       </li>
+   
       <li className={styles.navigationItem}>
         <Link to="/blog/">Blog</Link>
       </li>

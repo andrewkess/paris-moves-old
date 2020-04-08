@@ -5,19 +5,24 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const blogPost = path.resolve('./src/templates/teacher-post.js')
     resolve(
       graphql(
         `
           {
-            allContentfulBlogPost {
+            allContentfulTeacher {
               edges {
                 node {
-                  title
-                  slug
+                  webUrl
                 }
               }
             }
+
+
+           
+
+
+
           }
           `
       ).then(result => {
@@ -26,17 +31,44 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const posts = result.data.allContentfulBlogPost.edges
+        const posts = result.data.allContentfulTeacher.edges
         posts.forEach((post, index) => {
+// moment.js comes with gatsby
+const moment = require('moment');
+
           createPage({
-            path: `/blog/${post.node.slug}/`,
+            path: `/teacher/${post.node.webUrl}/`,
             component: blogPost,
             context: {
-              slug: post.node.slug
+              slug: post.node.webUrl,
+              today: parseInt((moment().format('X')))
+              //todayTimeStamp: Date(document.data.event_date)
             },
           })
         })
       })
     )
   })
+}
+
+// moment.js comes with gatsby
+const moment = require('moment');
+
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+
+  // I'm guessing your type is ContentfulClass
+  if (node.internal.type === `ContentfulClass`) {
+    const date = node.date;
+
+    createNodeField({
+      name: 'timestamp',
+      node,
+      // convert date to unix timestamp & convert to number
+      value: +moment(date).format('X'),
+    })
+
+
+  }
 }

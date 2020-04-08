@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import base from './base.css'
 import Container from './container'
 import Navigation from './navigation'
+import VogueVideo from "../../static/videoplayback2.mp4"
+
 
 class Template extends React.Component {
   render() {
@@ -17,6 +19,17 @@ class Template extends React.Component {
     return (
       <Container>
         <Navigation />
+
+        <video autoplay="true"
+          width="100%"
+          height="auto"
+          preload="auto"
+          muted="true"
+          playsinline="true"
+          loop="true">
+    <source src={VogueVideo} type="video/mp4" />
+  </video>
+
         {children}
       </Container>
     )

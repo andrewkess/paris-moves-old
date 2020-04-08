@@ -13,8 +13,6 @@ export default ({ data2 }) => (
 
 
   <div className={styles.teacher} height="400px">
-  <Image src={data2.heroImage.fluid.src}/>
-<br></br>
 <Carousel>
   <Carousel.Item>
 
