@@ -18,7 +18,8 @@ export default ({ data2 }) => (
 </div></li>
 <li class="flex-item">
     <a href={data2.instagram}>
-<Image src={instagram} className={styles.insta}  />
+Insta 
+
 </a>
 
     

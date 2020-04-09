@@ -58,10 +58,10 @@ module.exports = {
 
 
 // moment.js comes with gatsby
-const moment = require('moment');
+//const moment = require('moment');
 
 
 
-  const SOME_TIMESTAMP  =  moment().format('X');
+//  const SOME_TIMESTAMP  =  moment().format('X');
 
-  const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss")
+//  const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss")

@@ -8,11 +8,18 @@ import Layout from '../components/layout'
 import heroStyles from '../components/hero.module.css'
 import ClassPreview from '../components/class-preview'
 
+import moment from 'moment'
+
 
 import styles from '../components/teacher.module.css'
 //import instagram from "../../../public/instagram.png" // Tell Webpack this JS file uses this image
 import { Image, Container, Row, Col, ListGroup } from 'react-bootstrap';
 
+
+//var moment = require('moment');
+//moment().format();
+const SOME_TIMESTAMP  =  moment().format('X');
+const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss");
 
 
 class BlogPostTemplate extends React.Component {
@@ -30,13 +37,16 @@ class BlogPostTemplate extends React.Component {
 
 
 // moment.js comes with gatsby
-const moment = require('moment');
+//const moment = require('moment');
+
+//var moment = require('moment');
 
 
 
-  const SOME_TIMESTAMP  =  moment().format('X');
 
-  const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss")
+//const SOME_TIMESTAMP  =  moment().format('X');
+
+//const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss");
 
 
 
@@ -87,7 +97,7 @@ Insta
 
   <div className={styles.teacherBio}>{post.bio.bio}
 
-
+{SOME_TIMESTAMP2} - {SOME_TIMESTAMP}
   
   </div>
   
@@ -189,11 +199,8 @@ site {
                 
                 
                 filter: {
-                    fields: { timestamp: { gt: $today } },  teacher: {webUrl: {eq: $slug}} 
+                    fields: {timestamp: { gt: $today }},  teacher: {webUrl: {eq: $slug}} 
                 }
-                
-                
-                
                 
                 
                 ) {
@@ -205,7 +212,7 @@ site {
                 type
                 date(formatString:"DD")
                 fields {timestamp}
-
+                
                 month: date(formatString: "MMM")
                 time: date(formatString: "h:mm A")
                 

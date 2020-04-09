@@ -1,6 +1,10 @@
 const Promise = require('bluebird')
 const path = require('path')
 
+//import moment from 'moment'
+const moment = require('moment');
+
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -34,15 +38,15 @@ exports.createPages = ({ graphql, actions }) => {
         const posts = result.data.allContentfulTeacher.edges
         posts.forEach((post, index) => {
 // moment.js comes with gatsby
-const moment = require('moment');
+//const moment = require('moment');
 
           createPage({
             path: `/teacher/${post.node.webUrl}/`,
             component: blogPost,
             context: {
               slug: post.node.webUrl,
+//creates a timestamp of today to check against the timestamp of the class date
               today: parseInt((moment().format('X')))
-              //todayTimeStamp: Date(document.data.event_date)
             },
           })
         })
@@ -52,7 +56,7 @@ const moment = require('moment');
 }
 
 // moment.js comes with gatsby
-const moment = require('moment');
+//const moment = require('moment');
 
 
 exports.onCreateNode = ({ node, actions }) => {
