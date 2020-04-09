@@ -86,8 +86,7 @@ Insta
 
 
   <div className={styles.teacherBio}>{post.bio.bio}
-  <br></br> <br></br>Timestamp in number: {SOME_TIMESTAMP}    <br></br>
-Timestamp in string: {SOME_TIMESTAMP2}
+
 
   
   </div>
@@ -139,7 +138,7 @@ export const pageQuery = graphql`
   
   BlogPostBySlug2(
     $slug: String!,
-
+    $today: Int!
     ) {
     
 site {
@@ -190,7 +189,7 @@ site {
                 
                 
                 filter: {
-                       teacher: {webUrl: {eq: $slug}} 
+                    fields: { timestamp: { gt: $today } },  teacher: {webUrl: {eq: $slug}} 
                 }
                 
                 
