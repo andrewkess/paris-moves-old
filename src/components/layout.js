@@ -20,15 +20,38 @@ class Template extends React.Component {
       <Container>
         <Navigation />
 
-        <video autoplay="true"
+
+
+<header>
+
+<video autoplay="true"
           width="100%"
           height="auto"
           preload="auto"
           muted="true"
           playsinline="true"
           loop="true">
-    <source src={VogueVideo} type="video/mp4" />
+    <source src={VogueVideo} type="video/mp4" class='headerVid'/>
   </video>
+        <div className="splash">
+        
+   
+              
+              
+        <div className="sign">
+ Paris
+</div>
+
+
+ <div class="sign2"><span className="flicker">M</span><span className="flicker">oves</span>
+</div>
+         
+
+       </div>
+
+       </header>
+
+     
 
         {children}
       </Container>
