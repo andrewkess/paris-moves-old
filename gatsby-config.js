@@ -27,6 +27,7 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,6 +35,27 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
         name: 'images'
       }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Source Code Pro`,
+            variants: [`200`, `300`]
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`]
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-source-contentful',

@@ -14,7 +14,7 @@ body {
   background: #eee;
   margin: 0;
 padding-bottom: 40px;
-
+overflow: auto;
 
   
 }
@@ -120,23 +120,14 @@ a {
 
 
 
-.splash{
-position: absolute;
-top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-    flex-direction: column;
 
-}
 
 .headerVid{
   min-width: 100vw;
   min-height: 100vh;
   object-fit: cover;
+  z-index: 900;
+
 }
 
 header{
@@ -155,45 +146,64 @@ margin-bottom: 2rem;
 
 .sign {
  
+  position: absolute;
+top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+
 
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
-    #6b1839,
+    black,
     transparent
   );
- 
+ margin-top:7px;
   letter-spacing: 1;
  
   font-family: "Clip";
   text-transform: uppercase;
-  font-size: 9em;
+  font-size: 1.7em;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
   
+
+
+
+
+
+
+}
+
+.sign a, a:hover {
+  text-decoration: underline;
 }
 
 .sign2 {
+ 
 
-  line-height: 0px;
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
-    #6b1839,
+    black,
     transparent
   );
-
-  letter-spacing: 10;
+ margin-top:3px;
+  letter-spacing: 1;
  
   font-family: "Clip";
   text-transform: uppercase;
-  font-size: 7em;
+  font-size: 1.7em;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
+  
 }
 
 
@@ -229,7 +239,7 @@ margin-bottom: 2rem;
 
 @keyframes shine {
   0% {
-    color: #6b1839;
+    color: black;
     text-shadow: none;
   }
   100% {
