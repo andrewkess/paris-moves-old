@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform .3s
+  transition: transform .2s
               cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
   z-index: 1000;
@@ -44,7 +44,7 @@ margin:0 auto;
   }
 
   #flyoutMenu .instructorBar {
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 0px;
     margin-bottom: 15px;
   }
@@ -57,12 +57,16 @@ margin:0 auto;
 }
 
   #flyoutMenu .devbar {
-    margin-left: 5px;
-    margin-top: 200px;
+    margin-left: 10px;
+    margin-top: 150px;
   }
 
 
 .menuContainer{
     padding-top:20px;
+    margin-left: 10px;
+}
+
+.menuContainer2{
     margin-left: 10px;
 }

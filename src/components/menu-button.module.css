@@ -33,9 +33,9 @@ margin-top:11px;
 .cartLink{
     font-size: 1.1em;
     color: white;
-    margin:2px;
+    margin:0px;
     text-decoration: none;
-    margin-left:10px;
+    margin-left:0px;
 
 }
 
@@ -67,14 +67,15 @@ text-decoration: none;
 
 .navMenuContainer{
     padding-left: 0px !important;
+    margin-right: 0px !important;
     padding-right: 0px !important;
     justify-content: left;
     align-items: left;
     border: 0px solid #0065A6;
     text-align: left; 
-    margin:10px;
+    margin-left:10px;
+    margin-top:10px;
   margin-bottom:16px;
-
 
 }
 
