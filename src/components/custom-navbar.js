@@ -64,7 +64,7 @@ class CustomNavBar extends Component {
 
 
 className={styles.langLink} activeClassName={styles.activeLang}>EN</Link> 
-<Link to="/blog/" 
+<Link to="/blankslate/" 
 
 
 

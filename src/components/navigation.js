@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import MenuContainer from './menu-container'
+import Demo from './hamburger-react-button'
 
 export default () => (
   <div>
@@ -28,7 +29,7 @@ export default () => (
 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
 
 <div>
-<MenuContainer /></div>
+<Demo /></div>
 
 <Navbar.Brand href="/"  className="" >PARIS MOVES</Navbar.Brand>
 
