@@ -2,10 +2,23 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import MenuContainer from './menu-container'
 
 export default () => (
   <div>
  
+ 
+
+
+
+
+
+
+
+
+
+
+
  
  <Navbar bg="black" variant="dark" expand="xs" 
 >
@@ -14,19 +27,20 @@ export default () => (
 
 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
 
+<div>
+<MenuContainer /></div>
+
+<Navbar.Brand href="/"  className="" >PARIS MOVES</Navbar.Brand>
 
 
-<Navbar.Brand href="/"  className="row align-items-start" >PARIS MOVES</Navbar.Brand>
-
-
-      <Nav className="justify-content-start" activeKey="/home">
-    <Nav.Item className="flex">
+      <Nav className="flex-row" activeKey="/home">
+    <Nav.Item className="">
       <Nav.Link href="/home">EN</Nav.Link>
     </Nav.Item>
-    <Nav.Item className="flex">
+    <Nav.Item className="">
       <Nav.Link eventKey="link-1">FR</Nav.Link>
     </Nav.Item>
-    <Nav.Item className="flex">
+    <Nav.Item className="">
       <Nav.Link eventKey="link-2">SC</Nav.Link>
     </Nav.Item>
   </Nav>

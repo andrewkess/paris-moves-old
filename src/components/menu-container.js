@@ -3,6 +3,8 @@ import MenuButton from './menu-button'
 import Menu from './menu'
  
 
+
+
 class MenuContainer extends Component {
     constructor(props, context) {
       super(props, context);
@@ -38,7 +40,13 @@ class MenuContainer extends Component {
     render() {
       return (
         <div>
+          
+        
+          
           <MenuButton handleMouseDown={this.handleMouseDown}/>
+
+
+ 
           <Menu handleMouseDown={this.handleMouseDown}
                 menuVisibility={this.state.visible}/>
         </div>

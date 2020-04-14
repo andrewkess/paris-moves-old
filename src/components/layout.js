@@ -6,8 +6,8 @@ import Container from './container'
 import Navigation from './navigation'
 
 
-import MenuContainer from './menu-container'
 
+import CustomNavBar from './custom-navbar'
 
 //To add full screen video module just import and then add this component to layout below
 //import VideoFullScreen from './video-full-screen'
@@ -27,7 +27,9 @@ class Template extends React.Component {
     return (
       <Container>
         
-        <MenuContainer />
+       
+        <CustomNavBar />
+
         
         <Navigation />
 
