@@ -5,9 +5,13 @@ import hamburgers from './hamburgers.css'
 import Container from './container'
 import Navigation from './navigation'
 
-//To add full screen video module just import and then add this component to layout below
-import VideoFullScreen from './video-full-screen'
+
 import MenuContainer from './menu-container'
+
+
+//To add full screen video module just import and then add this component to layout below
+//import VideoFullScreen from './video-full-screen'
+//<VideoFullScreen />
 
 
 class Template extends React.Component {
@@ -25,7 +29,7 @@ class Template extends React.Component {
         
         <MenuContainer />
         
-        <VideoFullScreen />
+        <Navigation />
 
 
 

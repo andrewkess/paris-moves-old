@@ -18,3 +18,12 @@
 .navigationItem a {
   color: currentColor;
 }
+
+.colorNav {
+background-color: black;
+color:pink;
+}
+
+.bootmenu{
+  border: 5px solid pink;
+}
