@@ -4,8 +4,8 @@
   top: 0;
 width: 100%;
   z-index: 1999;
-height: 55px;
-
+padding-top:2px;
+padding-bottom: 2px;
 }
 
 

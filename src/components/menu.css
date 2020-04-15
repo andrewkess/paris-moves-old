@@ -9,7 +9,7 @@
               cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
   z-index: 500;
-padding:0px;
+padding:5px;
 margin:0 auto;
 
 }
@@ -67,7 +67,7 @@ margin:0 auto;
 
 
 .menuContainer{
-    padding-top:20px;
+    padding-top:10px;
     margin-left: 10px;
 }
 
