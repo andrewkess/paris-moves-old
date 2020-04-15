@@ -19,7 +19,6 @@ class CustomNavBar extends Component {
   
     render() {
       return (
-        <div>
           
           <Container className={styles.navigationBar} fluid>
     
@@ -92,8 +91,6 @@ className={styles.langLink} activeClassName={styles.activeLang}>FR</Link>
 
 
 
-
-        </div>
       );
     }
   }

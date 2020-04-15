@@ -3,12 +3,11 @@
     position: fixed;
   top: 0;
 
-
-  max-height: 100px;
-  z-index: 999;
-
+  z-index: 1999;
+height: 55px;
 
 }
+
 
 .rightMenu{
     padding-left: 0px !important;
@@ -18,16 +17,15 @@
     border: 0px solid #0065A6;
     text-align: right; 
     margin-right:15px;
-margin-top:11px;
+margin-top:13px;
 
 }
 
 
 .langLink{
     font-size: 0.9em;
-    color:gray;
-    margin:2px;
-
+    color: #e4e3e3;
+    margin-right:4px;
 }
 
 .cartLink{
@@ -35,7 +33,7 @@ margin-top:11px;
     color: white;
     margin:0px;
     text-decoration: none;
-    margin-left:0px;
+    margin-left:3px;
 
 }
 
@@ -73,9 +71,9 @@ text-decoration: none;
     align-items: left;
     border: 0px solid #0065A6;
     text-align: left; 
-    margin-left:10px;
-    margin-top:10px;
-  margin-bottom:16px;
+    margin-left:0px;
+    margin-top:0px;
+  margin-bottom:0px;
 
 }
 
@@ -86,7 +84,6 @@ text-decoration: none;
     align-items: center;
     border: 0px solid #0065A6;
  text-align: center;
- margin:0px;
 }
 
 #roundButton {
