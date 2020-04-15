@@ -8,7 +8,8 @@ import Demo from './hamburger-react-button'
 
 
 
-import CustomNavBar from './custom-navbar'
+//import CustomNavBar from './custom-navbar'
+//<CustomNavBar />
 
 //To add full screen video module just import and then add this component to layout below
 //import VideoFullScreen from './video-full-screen'
@@ -26,19 +27,12 @@ class Template extends React.Component {
     }
 
     return (
-      <Container>
-        
-       
-        <CustomNavBar />
-
-        
-        <Navigation />
-   
-
-
-
+     <div>
+      <Navigation />
+     <Container>
         {children}
       </Container>
+      </div>
     )
   }
 }

@@ -23,11 +23,11 @@ class Demo extends React.Component {
           position: 'fixed',
           width: '36px',
           height: '30px',
-          left: '36px',
-          top: '36px'
+          left: '15px',
+          top: '15px'
         },
         bmBurgerBars: {
-          background: '#373a47'
+          background: 'white'
         },
         bmBurgerBarsHover: {
           background: '#a90000'
@@ -62,6 +62,8 @@ class Demo extends React.Component {
           background: 'rgba(0, 0, 0, 0.3)'
         }
       }
+
+      
       
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (

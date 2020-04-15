@@ -1,6 +1,6 @@
 import React from 'react'
 
 export default ({ children }) => (
-  <div style={{ paddingTop: '52px', backgroundColor:'black',
+  <div style={{  //backgroundColor:'black',
     margin: '0 auto' }}>{children}</div>
 )
