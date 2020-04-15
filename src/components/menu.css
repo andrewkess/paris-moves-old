@@ -8,7 +8,7 @@
   transition: transform .2s
               cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
-  z-index: 0;
+  z-index: 500;
 padding:0px;
 margin:0 auto;
 
@@ -29,7 +29,7 @@ margin:0 auto;
  
 #flyoutMenu  a {
   color: white;
-  padding-left: 15px;
+  padding-left: 10px;
 
   text-decoration: none;
 }
@@ -41,15 +41,16 @@ margin:0 auto;
 #flyoutMenu h4 {
     
     font-size: 1.2em;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-left: 10px;
 
   }
 
   #flyoutMenu .instructorBar {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 0px;
-    margin-bottom: 15px;
+    padding-bottom: 0px;
   }
 
 .menu-left-column {
