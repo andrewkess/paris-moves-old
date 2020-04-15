@@ -27,3 +27,12 @@ color:pink;
 .bootmenu{
   border: 5px solid pink;
 }
+
+.myCSS{
+  background-color: black;
+color:pink;
+}
+
+#buttonNave{
+  z-index: 1300;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { slide as Menu } from 'react-burger-menu'
 
-import "./menu.css";
+//import "./menu.css";
 import { Link } from 'gatsby'
 import { Container, Col, Row } from 'react-bootstrap'
 import styles from './menu-button.module.css'
@@ -23,11 +23,11 @@ class Demo extends React.Component {
           position: 'fixed',
           width: '36px',
           height: '30px',
-          left: '15px',
-          top: '15px'
+          left: '36px',
+          top: '30px'
         },
         bmBurgerBars: {
-          background: 'white'
+          background: 'pink'
         },
         bmBurgerBarsHover: {
           background: '#a90000'
