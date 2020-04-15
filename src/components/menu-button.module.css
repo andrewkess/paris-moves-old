@@ -4,8 +4,8 @@
   top: 0;
 
 
-  
-  
+  max-height: 100px;
+  z-index: 999;
 
 
 }

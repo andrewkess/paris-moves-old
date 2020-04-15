@@ -1,8 +1,7 @@
 import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import Demo from '../components/hamburger-react-button'
+//import Demo from '../components/hamburger-react-button'
+import CustomNavBar from '../components/custom-navbar'
+
 
 class NavbarTry extends React.Component {
   render() {
@@ -11,7 +10,10 @@ class NavbarTry extends React.Component {
     return (
       
 
-        <Demo />
+     //   <Demo />
+        <CustomNavBar />
+     
+
 
     )
   }
